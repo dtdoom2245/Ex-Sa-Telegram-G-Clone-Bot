@@ -13,6 +13,7 @@ AUTHORISED_USERS = []
 INDEX_URL = ""
 IS_TEAM_DRIVE = True
 USE_SERVICE_ACCOUNTS = True
+ACCOUNTS_ZIP_URL = ""
 # --------------------------------------
 
 # dont edit below this >
@@ -21,6 +22,7 @@ USE_SERVICE_ACCOUNTS = True
 
 BOT_TOKEN = os.environ.get('BOT_TOKEN', BOT_TOKEN)
 GDRIVE_FOLDER_ID = os.environ.get('GDRIVE_FOLDER_ID', GDRIVE_FOLDER_ID)
+ACCOUNTS_ZIP_URL = os.environ.get('ACCOUNTS_ZIP_URL', ACCOUNTS_ZIP_URL)
 OWNER_ID = int(os.environ.get('OWNER_ID', OWNER_ID))
 AUTHORISED_USERS = json.loads(os.environ.get('AUTHORISED_USERS', json.dumps(AUTHORISED_USERS)))
 INDEX_URL = os.environ.get('INDEX_URL', INDEX_URL)
