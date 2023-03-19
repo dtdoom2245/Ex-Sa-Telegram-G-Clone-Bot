@@ -9,25 +9,25 @@ from bot.clone_status import CloneStatus
 from bot.msg_utils import deleteMessage, sendMessage
 import time
 
-REPO_LINK = "https://github.com/jagrit007/Telegram-CloneBot"
+REPO_LINK = "https://github.com/dtdoom2245/Ex-Sa-Telegram-G-Clone-Bot"
 # Soon to be used for direct updates from within the bot.
 
 @run_async
 def start(update, context):
-    sendMessage("Hello! Please send me a Google Drive Shareable Link to Clone to your Drive!" \
+    sendMessage("Hello! Please send me a Google Drive Shareable Link to Clone to your Drive! Bot Owner By @DoubleT2245" \
         "\nSend /help for checking all available commands.",
     context.bot, update, 'Markdown')
     # ;-;
 
 @run_async
 def helper(update, context):
-    sendMessage("Here are the available commands of the bot\n\n" \
+    sendMessage("မင်္ဂလာပါ ဒီ 🤖 Bot 🤖 လေးမှာအသုံးပြုလိုရတဲ့ commands များကိုအောက်မှာလေ့လာနိုင်ပါတယ်..အရင်ဆုံး newtzmclone@googlegroups.com ကို ကူးမဲ့ Drive ရယ် လက်ခံမည့် Drive မှာ content manager အပ်ထားပေးပါ။\n\n" \
         "*Usage:* `/clone <link> [DESTINATION_ID]`\n*Example:* \n1. `/clone https://drive.google.com/drive/u/1/folders/0AO-ISIXXXXXXXXXXXX`\n2. `/clone 0AO-ISIXXXXXXXXXXXX`" \
             "\n*DESTIONATION_ID* is optional. It can be either link or ID to where you wish to store a particular clone." \
             "\n\nYou can also *ignore folders* from clone process by doing the following:\n" \
                 "`/clone <FOLDER_ID> [DESTINATION] [id1,id2,id3]`\n In this example: id1, id2 and id3 would get ignored from cloning\nDo not use <> or [] in actual message." \
                     "*Make sure to not put any space between commas (,).*\n" \
-                        f"Source of this bot: [GitHub]({REPO_LINK})", context.bot, update, 'Markdown')
+                        Bot Owner by @DoubleT2245 f"Source of this bot: [GitHub]({REPO_LINK})", context.bot, update, 'Markdown')
 
 # TODO Cancel Clones with /cancel command.
 @run_async
