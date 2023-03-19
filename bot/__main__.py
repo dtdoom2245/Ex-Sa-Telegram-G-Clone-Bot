@@ -27,7 +27,7 @@ def helper(update, context):
             "\n\nYou can also *ignore folders* from clone process by doing the following:\n" \
                 "`/clone <FOLDER_ID> [DESTINATION] [id1,id2,id3]`\n In this example: id1, id2 and id3 would get ignored from cloning\nDo not use <> or [] in actual message." \
                     "*Make sure to not put any space between commas (,).*\n" \
-                        Bot Owner by @DoubleT2245 f"Source of this bot: [GitHub]({REPO_LINK})", context.bot, update, 'Markdown')
+                        f"Source of this bot: [GitHub]({REPO_LINK})", context.bot, update, 'Markdown')
 
 # TODO Cancel Clones with /cancel command.
 @run_async
